@@ -10,7 +10,7 @@
 		petalinux-create --type project --template zynq --name md5
 
 
-3.Enter into the created project and import hardware description:
+3. Enter into the created project and import hardware description:
 
 	cd md5
 	petalinux-config --get-hw-description <path_to_.xsa_file>
@@ -24,6 +24,7 @@ A configuration menu opens. Configure as below:
 	
 → Image Packaging Configuration:
 		change root filesystem type to EXT4
+  
   
 4. Launch kernel configuration to customize the settings:
 
