@@ -22,3 +22,21 @@ A configuration menu opens. Configure as below:
 	
 	→ Image Packaging Configuration:
 		change root filesystem type to EXT4
+3. Launch kernel configuration to customize the settings:
+
+	petalinux-config -c kernel
+
+	→ CPU Power Management: Disable CPU frequency scaling and CPU idle for development purposes.
+		change CPU Frequency scaling to NO
+		change CPU Idle to NO
+
+	→ Device Drivers:
+		change On-Chip Interconnect management support to YES
+
+	→ Reset Controller Support:
+		change Simple Reset Controller Driver to YES
+	
+	→ Userspace I/O drivers:
+		change Userspace I/O platform driver with generic IRQ handling to YES
+		change Userspace platform driver with generic irq and dynamic memory to YES
+		change Xilinx AI Engine driver to YES
