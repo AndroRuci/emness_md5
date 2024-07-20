@@ -37,6 +37,7 @@
 	→ CPU Power Management: Disable CPU frequency scaling and CPU idle for development purposes
 
 	  * change CPU Frequency scaling to NO
+     
           * change CPU Idle to NO
 
 	→ Device Drivers:
