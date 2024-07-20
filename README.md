@@ -4,9 +4,11 @@
 
 		source <petaLinux_tool_install_dir>/settings.sh
 
+
 2. Use the petalinux-create command with the project template corresponding to your hardware:
 
 		petalinux-create --type project --template zynq --name md5
+
 
 3.Enter into the created project and import hardware description:
 
@@ -22,6 +24,7 @@ A configuration menu opens. Configure as below:
 	
 → Image Packaging Configuration:
 		change root filesystem type to EXT4
+  
 4. Launch kernel configuration to customize the settings:
 
 	petalinux-config -c kernel
