@@ -20,7 +20,7 @@
 	
  	->DTG Setting->Kernel Bootargs:
 
-		Change generate boot args automatically to NO
+                Change generate boot args automatically to NO
 		Update user set kernel bootargs to:
 
    		earlycon console=ttyPS0,115200 clk_ignore_unused root=/dev/mmcblk0p2 rw rootwait cma=512M
@@ -32,14 +32,14 @@
   
 4. Launch kernel configuration to customize the settings:
 
-	petalinux-config -c kernel
+		petalinux-config -c kernel
 
-→ CPU Power Management: Disable CPU frequency scaling and CPU idle for development purposes
+	→ CPU Power Management: Disable CPU frequency scaling and CPU idle for development purposes
 
-	change CPU Frequency scaling to NO
-	change CPU Idle to NO
+		change CPU Frequency scaling to NO
+		change CPU Idle to NO
 
-→ Device Drivers:
+	→ Device Drivers:
 
 	change On-Chip Interconnect management support to YES
 
