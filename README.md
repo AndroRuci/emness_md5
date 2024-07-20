@@ -40,6 +40,7 @@
      
           * change CPU Idle to NO
 
+
 	→ Device Drivers:
 
 	  * change On-Chip Interconnect management support to YES
