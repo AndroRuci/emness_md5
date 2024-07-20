@@ -12,20 +12,22 @@
 
 3. Enter into the created project and import hardware description:
 
-	cd md5
-	petalinux-config --get-hw-description <path_to_.xsa_file>
+		cd md5
+		petalinux-config --get-hw-description <path_to_.xsa_file>
 
 	
  	A configuration menu opens. Configure as below: 
 	
- ->DTG Setting->Kernel Bootargs:
-	Change generate boot args automatically to NO
-	Update user set kernel bootargs to:
-		earlycon console=ttyPS0,115200 clk_ignore_unused root=/dev/mmcblk0p2 rw rootwait cma=512M
+ 	->DTG Setting->Kernel Bootargs:
+
+		Change generate boot args automatically to NO
+		Update user set kernel bootargs to:
+
+   		earlycon console=ttyPS0,115200 clk_ignore_unused root=/dev/mmcblk0p2 rw rootwait cma=512M
 	
-→ Image Packaging Configuration:
+	→ Image Packaging Configuration:
 		
-  change root filesystem type to EXT4
+  		change root filesystem type to EXT4
   
   
 4. Launch kernel configuration to customize the settings:
