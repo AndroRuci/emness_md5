@@ -208,12 +208,4 @@ Documentation: [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/)
       [Platform devices and device trees][pltfm-dev] and [Kernel, drivers and embedded Linux development][dev-trees]
 
 [//]: # "Source definitions"
-[hash-functions]: https://csrc.nist.gov/projects/hash-functions "Hash Functions by NIST CSRC"
-[sh-standard]: http://dx.doi.org/10.6028/NIST.FIPS.180-4 "FIPS PUB 180-4 Secure Hash Standard"
-[sha256-core]: https://opencores.org/projects/sha256_hash_core "SHA-256 HASH CORE"
-[amd-doc]: https://docs.xilinx.com/ "AMD Documentation Portal"
-[os-concepts]: https://www.os-book.com/OS10/ "Operating System Concepts"
-[pltfm-api]: https://lwn.net/Articles/448499/ "The platform device API"
-[pltfm-dev]: https://lwn.net/Articles/448502/ "Platform devices and device trees"
-[dev-trees]: https://elinux.org/images/f/f9/Petazzoni-device-tree-dummies_0.pdf "Kernel, drivers and embedded Linux development"
-[amd-pltfm]: https://www.xilinx.com/video/soc/linux-device-drivers-part-2-platform-character-drivers.html "Introduction to Linux Device Drivers"
+[hash-functions]: https://csrc.nist.gov/projects/hash-functions "Hash Functions by NIST CSRC" 
