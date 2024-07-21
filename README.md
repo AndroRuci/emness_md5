@@ -199,9 +199,7 @@ Documentation: [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/)
 
 * https://www.geeksforgeeks.org/what-is-the-md5-algorithm/
 
-* [SHA-256 hardware implementation][sha256-core]
-
-* [AMD Documentation Portal][amd-doc]
+* https://opencores.org/
 
 
 [//]: # "Source definitions"
