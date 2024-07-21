@@ -182,6 +182,7 @@ The PetaLinux flow is extensively documented in the reference guide UG1144. The 
 
 
 ### The algorithm
+MD5 is a cryptographic hash function algorithm that takes the message as input of any length and changes it into a fixed-length message of 16 bytes. MD5 algorithm stands for the message-digest algorithm. MD5 was developed as an improvement of MD4, with advanced security purposes. The output of MD5 (Digest size) is always 128 bits. MD5 was developed by Ronald Rivest in 1991. MD5 Algorithm is used for file authentication, security purposes in web applications etc. Using this algorithm, we can store our password in 128 bits format. 
 
 
 ## The Driver
@@ -198,7 +199,7 @@ Documentation: [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/)
 
 ## Sources
 
-* SHA-256: [Hash Functions][hash-functions], [Secure Hash Standard][sh-standard]
+* https://www.geeksforgeeks.org/what-is-the-md5-algorithm/
 
 * [SHA-256 hardware implementation][sha256-core]
 
