@@ -1,35 +1,56 @@
 # md5 Core ZYNQ APSoC 
 
-
-  
-
-## Contents
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Contents](#contents)
-- [What is this?](#what-is-this)
-- [Getting Started](#getting-started)
-  - [Generating the Hardware Design](#generating-the-hardware-design)
-  - [Baremetal Platform Test](#baremetal-platform-test)
-  - [PetaLinux Flow](#petalinux-flow)
-- [License](#license)
-- [Sources](#sources)
-
 <!-- /code_chunk_output -->
 
-## What is this?
+### The algorithm
+MD5 is a cryptographic hash function algorithm that takes the message as input of any length and changes it into a fixed-length message of 16 bytes. MD5 algorithm stands for the message-digest algorithm. MD5 was developed as an improvement of MD4, with advanced security purposes. The output of MD5 (Digest size) is always 128 bits. MD5 was developed by Ronald Rivest in 1991. MD5 Algorithm is used for file authentication, security purposes in web applications etc. Using this algorithm, we can store our password in 128 bits format. 
 
+### Setup
+To be able to follow the next steps is needed Vivado 2022.1 and Vitis 2022.1.
+To setup the environment it's needed to clone the git. 
+To realise this you have to run:
 
-## Getting Started
+       git clone https://github.com/AndroRuci/emness_md5.git
+and change the directory to the one just obtained:
 
+       cd /path/to/emnsee_md5
 
 ### Generating the Hardware Design
+The Hardware Design (.xsa file) is obtained by means of Vivado. The following steps allow you to 
+create the project, realise the custom ip, implement the Hardware Design and, finally, to synthetize the 
+hardware and obtain the file. 
+To execute these operations the following commands are needed:
 
+    source /path/to/Xilinx_tools/Vivado/2022.1/settings64.sh
+    
+    vivado -source scripts/ip_generation.tcl
+On the folder ./out/ it's possible to find the result called: design_cryptocore.xsa . 
+On Vivado, in Block Design, you can see how all the entire hardware is wrapped, or modify it if needed. Thanks to the previous steps you can obtain the following diagram: 
+
+![Block Diagram](https://github.com/AndroRuci/emness_md5/blob/main/doc/block_diagram.png)
 
 ### Baremetal Platform Test
+Inside src/ip/baremetal there is HelloWord.c that allows you to test the hardware realised. 
+To do that you have to:
+1. Run Vitis and choose the workspace folder
+2. Click on 'Create Application Project'
+3. Select 'Next' and click on 'Create a new platform from hardware (XSA)'
+
+![Xsa Selection](https://github.com/AndroRuci/emness_md5/blob/main/doc/vitis_xsa_selection.png)
+
+ 4. Choose the 'Application project name' and select the 'ps7_cortex9_0' processor
+ 5. Press 'Next' and finally select an 'Empty Application(C)'
+ 6. Right-Click on src/ and select 'Import Sources...'
+
+![Helloword Selection](https://github.com/AndroRuci/emness_md5/blob/main/doc/vitis_helloword_selection.png)
+
+7. Click on the Assistant Window the '<name_project> [Application]' and the 'Build' button
+8. Connect the Board with the JTAG Jump enabled and press on Debug then Run
+
+### Padding
+The cryptocore used in this project needs that the input string has to have a proper padding. 
+It has been done using a program that gives you as output the right mapping of the bits.
+On the folder /src/baremetal/padding you can find a file called padding.c that has to be run to obtain it.
 
 ### PetaLinux Flow
 The PetaLinux flow is extensively documented in the reference guide UG1144. The steps performed are summarized below. 
@@ -174,11 +195,8 @@ The PetaLinux flow is extensively documented in the reference guide UG1144. The 
 
 
 
-### The algorithm
-MD5 is a cryptographic hash function algorithm that takes the message as input of any length and changes it into a fixed-length message of 16 bytes. MD5 algorithm stands for the message-digest algorithm. MD5 was developed as an improvement of MD4, with advanced security purposes. The output of MD5 (Digest size) is always 128 bits. MD5 was developed by Ronald Rivest in 1991. MD5 Algorithm is used for file authentication, security purposes in web applications etc. Using this algorithm, we can store our password in 128 bits format. 
 
 
-## The Driver
 
 
 
