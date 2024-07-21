@@ -15,11 +15,6 @@
   - [Generating the Hardware Design](#generating-the-hardware-design)
   - [Baremetal Platform Test](#baremetal-platform-test)
   - [PetaLinux Flow](#petalinux-flow)
-- [Deploy from Release](#deploy-from-release)
-- [Usage (TUL PYNQ-Z2 board)](#usage-tul-pynq-z2-board)
-- [The Driver](#the-driver)
-  - [The Platform Device API](#the-platform-device-api)
-  - [Device Trees](#device-trees)
 - [License](#license)
 - [Sources](#sources)
 
