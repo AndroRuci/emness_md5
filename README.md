@@ -9,8 +9,6 @@
 
 <!-- code_chunk_output -->
 
-- [Contributors](#contributors)
-- [Project Advancement](#project-advancement)
 - [Contents](#contents)
 - [What is this?](#what-is-this)
 - [Getting Started](#getting-started)
