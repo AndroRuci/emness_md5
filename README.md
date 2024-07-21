@@ -155,7 +155,7 @@ The PetaLinux flow is extensively documented in the reference guide UG1144. The 
 
         find -name "md5.ko"
 
-9. Using fdisk, as suggested in [UG1144][amd-doc] partition the sd card into ~ 200 MB for the FAT32 bootable partition and the remaining space as EXT4 root file system partition
+9. Using fdisk, as suggested in UG1144 manual, partition the sd card into 200 MB for the FAT32 bootable partition and the remaining space as EXT4 root file system partition
 
 
    To generate the files for SD card, from the PetaLinux project root change
@@ -203,12 +203,6 @@ Documentation: [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/)
 
 * [AMD Documentation Portal][amd-doc]
 
-* Theory: 
-  
-    * [OS Concepts][os-concepts]
-
-    * Device drivers: [Introduction to Linux Device Drivers][amd-pltfm], [The platform device API][pltfm-api],
-      [Platform devices and device trees][pltfm-dev] and [Kernel, drivers and embedded Linux development][dev-trees]
 
 [//]: # "Source definitions"
 [hash-functions]: https://csrc.nist.gov/projects/hash-functions "Hash Functions by NIST CSRC" 
