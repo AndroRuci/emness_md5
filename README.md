@@ -39,8 +39,7 @@
 ### Baremetal Platform Test
 
 ### PetaLinux Flow
-The PetaLinux flow is extensively documented in the reference guide [UG1144][amd-doc]. The steps for
-a custom hardware platform are summarized in the table below.
+The PetaLinux flow is extensively documented in the reference guide UG1144. The steps performed are summarized below. 
 
 1. Setup PetaLinux environment, execute the appropriate command based on your installation directory
 
