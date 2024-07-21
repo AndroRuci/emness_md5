@@ -94,11 +94,16 @@ The PetaLinux flow is extensively documented in the reference guide UG1144. The 
      * change *package-management* to YES
      * change *debug-tweaks* to YES
 
-5. Build the entire system image:
+5. Include a simple hello world application.
+
+       petalinux-create -t apps --template c --name helloworld --enable
+
+
+6. Build the entire system image:
 
        petalinux-build
 
-6. Device tree customization:
+7. Device tree customization:
       
        nano components/plnx_workspace/device-tree/device-tree/pl.dtsi 
 
@@ -117,7 +122,7 @@ The PetaLinux flow is extensively documented in the reference guide UG1144. The 
         petalinux-build -c device-tree
         petalinux-build
 
-7. Create the custom kernel module:
+8. Create the custom kernel module:
 
        petalinux-create -t modules --name md5
 
@@ -152,7 +157,7 @@ The PetaLinux flow is extensively documented in the reference guide UG1144. The 
 
         find -name "md5.ko"
 
-8. Using fdisk, as suggested in [UG1144][amd-doc] partition the sd card into ~ 200 MB for the FAT32 bootable partition and the remaining space as EXT4 root file system partition
+9. Using fdisk, as suggested in [UG1144][amd-doc] partition the sd card into ~ 200 MB for the FAT32 bootable partition and the remaining space as EXT4 root file system partition
 
 
    To generate the files for SD card, from the PetaLinux project root change
@@ -172,7 +177,7 @@ The PetaLinux flow is extensively documented in the reference guide UG1144. The 
            sudo tar xvfp rootfs.tar.gz -C /media/rootfs
      * copy the module to `/media/rootfs/home/root`. 
 
-9. Insert SD card into the board. Create a serial connection through PuTTY with Baud Rate 115200. A command prompt appears, enter both user and password as root.
+10. Insert SD card into the board. Create a serial connection through PuTTY with Baud Rate 115200. A command prompt appears, enter both user and password as root.
 
 
 
