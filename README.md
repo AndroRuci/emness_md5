@@ -6,7 +6,7 @@
 MD5 is a cryptographic hash function algorithm that takes the message as input of any length and changes it into a fixed-length message of 16 bytes. MD5 algorithm stands for the message-digest algorithm. MD5 was developed as an improvement of MD4, with advanced security purposes. The output of MD5 (Digest size) is always 128 bits. MD5 was developed by Ronald Rivest in 1991. MD5 Algorithm is used for file authentication, security purposes in web applications etc. Using this algorithm, we can store our password in 128 bits format. 
 
 ### Setup
-To be able to follow the next steps is needed Vivado 2022.1 and Vitis 2022.1.
+To be able to follow the next steps is needed Vivado 2022.1, Vitis 2022.1 and Petalinux 2022.1.
 To setup the environment it's needed to clone the git. 
 To realise this you have to run:
 
