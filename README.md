@@ -203,8 +203,6 @@ The PetaLinux flow is extensively documented in the reference guide UG1144. The 
 
 ## License
 
-Code: [GNU GPLv2](https://choosealicense.com/licenses/gpl-2.0/)
-
 Documentation: [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/)
 
 
