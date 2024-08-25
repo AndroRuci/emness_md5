@@ -1,5 +1,5 @@
 # md5 Core ZYNQ APSoC 
-
+The idea originates from the [EMNESS](https://emness.eu) initiative, aiming to structure an innovative academic curriculum focused on reliability and hardware security. This material was originally developed as part of an assignment for the Operating Systems course (04JEZOQ) offered at Politecnico di Torino by Prof. Stefano Di Carlo and Prof. Alessio Carpegna.
 <!-- /code_chunk_output -->
 
 ### The algorithm
